@@ -5,7 +5,11 @@ import {TileBox} from '../../components';
 
 //redux
 import {useSelector, useDispatch, shallowEqual} from 'react-redux';
-import {init, shuffle, move} from '../../stores/actions/tiles';
+import {
+  initAttemp,
+  shuffleAttemp,
+  moveAttemp,
+} from '../../stores/actions/tiles';
 
 let GRID = 0;
 let LAST_TILE = 0;
@@ -36,14 +40,15 @@ export default function Home() {
     GRID = grid;
     LAST_TILE = GRID * GRID;
     setPlay(true);
-    dispatch(init(GRID));
+    dispatch(initAttemp(GRID));
   };
+
   const onPressTile = (row, column) => {
-    dispatch(move(row, column));
+    dispatch(moveAttemp(row, column));
   };
 
   const onStartPuzzle = () => {
-    dispatch(shuffle());
+    dispatch(shuffleAttemp());
   };
 
   const onReStartPuzzle = () => {
