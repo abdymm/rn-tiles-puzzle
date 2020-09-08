@@ -17,7 +17,6 @@ You can spend as long as you'd like, tho we recommend not more than 8 hours - pa
 
 ### Technology Used
 - React Hook
-- Redux Thunk
 
 ### Optional Technology
 - ~Reselect~
@@ -26,7 +25,7 @@ You can spend as long as you'd like, tho we recommend not more than 8 hours - pa
 
 ### Criteria
 - Candidate must use React Native, Redux, and Redux Saga to complete the challenge
-- Reselect and Typescript is optional but strongly reconmmended 
+- ~Reselect and Typescript is optional but strongly reconmmended ~
 - Code quality (includes elegance, consistency & readability)
 - Usability (operates without error and responsive to browser/device)
 - Reusability (bonus points for any reusable elements)
